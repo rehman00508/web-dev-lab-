@@ -22,7 +22,7 @@ const styles = {
     margin: '20px',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
     textAlign: 'center',
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#red',
   },
   name: {
     fontSize: '1.5em',

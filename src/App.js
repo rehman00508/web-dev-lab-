@@ -7,10 +7,10 @@ function App() {
     <div style={styles.appContainer}>
       <h1 style={styles.header}>Personal Profile</h1>
       <ProfileCard 
-        name="Fahad" 
-        age={30} 
-        occupation="Engineer" 
-        location="New York" 
+        name="Abdul Rehman" 
+        age={20} 
+        occupation="Programmer" 
+        location="GU TECH" 
       />
     </div>
   );
@@ -23,7 +23,7 @@ const styles = {
     alignItems: 'center',
     height: '100vh',
     flexDirection: 'column',
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#red',
   },
   header: {
     fontSize: '2em',
