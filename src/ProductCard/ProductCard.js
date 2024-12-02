@@ -1,14 +1,18 @@
 // src/ProductCard/ProductCard.js
 import React from 'react';
-import './ProductCard.css'; // Import the CSS for styling
+import './ProductCard.css';  // Importing the CSS styles
 
 const ProductCard = ({ title, description, price, imageUrl }) => {
   return (
     <div className="product-card">
+      {/* Product image */}
       <img src={imageUrl} alt={title} className="product-image" />
-      <h2 className="product-title">{title}</h2>
+      {/* Product title */}
+      <h3 className="product-title">{title}</h3>
+      {/* Product description */}
       <p className="product-description">{description}</p>
-      <p className="product-price">${price}</p>
+      {/* Product price */}
+      <span className="product-price">${price}</span>
     </div>
   );
 };
