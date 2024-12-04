@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import UserInfo from "./components/UserInfo";
+import Statistics from "./components/Statistics";
+import Messages from "./components/Messages";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={styles.container}>
+      <UserInfo />
+      <Statistics />
+      <Messages />
     </div>
   );
-}
+};
+
+const styles = {
+  container: {
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 1fr", // 3 equal columns for the layout
+    gap: "20px", // Spacing between cards
+    padding: "20px",
+    backgroundColor: "#f5f5f5",
+    minHeight: "100vh",
+  },
+};
 
 export default App;
